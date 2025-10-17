@@ -27,7 +27,8 @@ if uploaded_file is not None:
         # Detecção automática da coluna de data
         # -----------------------------
         colunas_lower = [c.lower() for c in df.columns]
-        possiveis_nomes = ['data', 'date', 'created_at', 'timestamp']
+        possiveis_nomes = ['data', 'date', 'created_at', 'timestamp', 'Registration Date'
+]
 
         coluna_data = None
         for nome in possiveis_nomes:
